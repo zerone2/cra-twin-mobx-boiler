@@ -1,7 +1,7 @@
 # CRA + twin.macro + MobX
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) + [twin.macro](https://github.com/ben-rogerson/twin.macro) + [MobX](https://mobx.js.org/) \
-(mobx-persist-store)
+later update -> (mobx-persist-store)
 
 ## Available Scripts
 
