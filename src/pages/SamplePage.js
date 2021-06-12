@@ -11,9 +11,25 @@ const SamplePage = () => {
       <div className='App'>
         <h1>Calendar sample page</h1>
         {/*<h3>url = {history.location.pathname}</h3>*/}
-        <div style={{ display: 'flex', flex: 'row nowrap', justifyContent: 'center', alignItems: 'center', marginTop: '30px' }}>
-          <div style={{ marginRight: '10px' }}>Calendar: </div>
+        <div>- Calendar -</div>
+        <div style={{ display: 'flex', flex: 'column nowrap', justifyContent: 'center', alignItems: 'center', marginTop: '30px' }}>
           <DatePicker value={selectedDate} onChange={handleDateChange} />
+          <div style={{marginRight: '35px'}}/>
+          <DatePicker
+            variant="inline"
+            label="Basic example"
+            value={selectedDate}
+            onChange={handleDateChange}
+          />
+          <div style={{marginRight: '35px'}}/>
+          <DatePicker
+            disableToolbar
+            variant="inline"
+            label="Only calendar"
+            helperText="No year selection"
+            value={selectedDate}
+            onChange={handleDateChange}
+          />
         </div>
       </div>
     </MuiPickersUtilsProvider>
